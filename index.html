@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - meta principales
+  -->
+  <title>Galactic Squad - Torneos de Valorant, Fortnite, Guitar Hero y PUBG</title>
+  <meta name="title" content="Galactic Squad - Torneos de Valorant, Fortnite, Guitar Hero y PUBG">
+  <meta name="description" content="Galactic Squad: torneos y videojuegos. Ven a jugar Valorant, Fortnite, Guitar Hero y PUBG.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google fonts
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - css
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - precarga de imágenes
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo dgs-logo" aria-label="Galactic Squad, inicio" data-i18n-aria="logoAria">
+        <svg class="dgs-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="dgsDrop" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7cf7ff" />
+              <stop offset="0.55" stop-color="#9841ff" />
+              <stop offset="1" stop-color="#e01cff" />
+            </linearGradient>
+          </defs>
+          <path d="M14 34 a18 18 0 1 0 36 0 a18 18 0 1 0 -36 0 Z" fill="url(#dgsDrop)" />
+          <ellipse cx="32" cy="34" rx="29" ry="8" fill="none" stroke="#7cf7ff" stroke-width="3"
+            transform="rotate(-18 32 34)" />
+          <circle cx="25" cy="27" r="4" fill="#fff" opacity="0.85" />
+          <circle cx="52" cy="10" r="2" fill="#fff" />
+          <circle cx="10" cy="12" r="1.4" fill="#fff" opacity="0.7" />
+        </svg>
+        <span class="dgs-word">
+          <span class="dgs-main">GALACTIC</span>
+          <span class="dgs-sub">Squad</span>
+        </span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link data-i18n="navHome">inicio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#juegos" class="navbar-link" data-nav-link data-i18n="navGames">juegos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#tournament" class="navbar-link" data-nav-link data-i18n="navTournament">torneos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#news" class="navbar-link" data-nav-link data-i18n="navNews">noticias</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contacto" class="navbar-link" data-nav-link data-i18n="navContact">contacto</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Cambiar idioma a inglés"
+          data-i18n-aria="langAria">
+          <ion-icon name="globe-outline" aria-hidden="true"></ion-icon>
+          <span data-lang-label>EN</span>
+        </button>
+
+        <button type="button" class="btn" data-btn data-signup-open data-i18n="headerCta">inscríbete</button>
+
+        <button class="nav-toggle-btn" aria-label="abrir menú" data-i18n-aria="menuAria" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <div class="hero has-before" id="home">
+        <div class="container">
+
+          <p class="section-subtitle" data-i18n="heroSubtitle">Torneos y videojuegos</p>
+
+          <h1 class="h1 title hero-title" data-i18n="heroTitle">Ven a jugar. <br> Compite por la copa.</h1>
+
+          <a href="#juegos" class="btn" data-btn data-i18n="heroCta">Ver los juegos</a>
+
+          <div class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="850" height="414" alt="Personajes de videojuegos"
+              data-i18n-alt="heroAlt" class="w-100">
+
+            <img src="./assets/images/hero-banner-bg.png" alt="" class="hero-banner-bg">
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+      <!-- 
+        - #JUEGOS
+      -->
+
+      <section class="section games" aria-labelledby="games-label" id="juegos">
+        <div class="container">
+
+          <p class="section-subtitle" id="games-label" data-reveal="bottom" data-i18n="gamesSubtitle">Elige tu juego</p>
+
+          <h2 class="h2 section-title" data-reveal="bottom" data-i18n="gamesTitle">
+            Juegos del <span class="span">torneo</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom" data-i18n="gamesText">
+            Cuatro juegos y un torneo para cada uno. Inscríbete solo o con tu equipo.
+          </p>
+
+          <ul class="games-list">
+
+            <li data-reveal="bottom">
+              <div class="game-card" style="--accent: hsl(355, 100%, 64%);">
+                <figure class="game-banner"><img src="./assets/images/game-valorant.jpg" width="600" height="338" loading="lazy" alt="Valorant" class="img-cover"></figure>
+                <h3 class="h3 game-title">Valorant</h3>
+                <p class="game-genre" data-i18n="valGenre">Shooter táctico 5 vs 5</p>
+                <p class="game-text" data-i18n="valText">Equipos de 5, puntería y estrategia. Arma tu equipo o te ayudamos a encontrar uno.</p>
+                <p class="game-night" data-i18n="valNight">Torneo: lunes y jueves</p>
+                <button type="button" class="game-signup" data-signup-open data-game="Valorant" data-i18n="signupGame">Inscribirme</button>
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="game-card" style="--accent: hsl(200, 100%, 60%);">
+                <figure class="game-banner"><img src="./assets/images/game-fortnite.jpg" width="600" height="338" loading="lazy" alt="Fortnite" class="img-cover"></figure>
+                <h3 class="h3 game-title">Fortnite</h3>
+                <p class="game-genre" data-i18n="fortGenre">Battle royale con construcción</p>
+                <p class="game-text" data-i18n="fortText">Caer, lootear y construir más rápido que el rival. Torneos en solitario, dúos y squads.</p>
+                <p class="game-night" data-i18n="fortNight">Torneo: martes</p>
+                <button type="button" class="game-signup" data-signup-open data-game="Fortnite" data-i18n="signupGame">Inscribirme</button>
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="game-card" style="--accent: hsl(30, 100%, 58%);">
+                <figure class="game-banner"><img src="./assets/images/game-guitar-hero.jpg" width="600" height="338" loading="lazy" alt="Guitar Hero" class="img-cover"></figure>
+                <h3 class="h3 game-title">Guitar Hero</h3>
+                <p class="game-genre" data-i18n="ghGenre">Ritmo y música</p>
+                <p class="game-text" data-i18n="ghText">Cinco botones, cero excusas. Gana quien saque más puntos en la lista de canciones de la noche.</p>
+                <p class="game-night" data-i18n="ghNight">Torneo: viernes</p>
+                <button type="button" class="game-signup" data-signup-open data-game="Guitar Hero" data-i18n="signupGame">Inscribirme</button>
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="game-card" style="--accent: hsl(45, 100%, 55%);">
+                <figure class="game-banner"><img src="./assets/images/game-pubg.jpg" width="600" height="338" loading="lazy" alt="PUBG" class="img-cover"></figure>
+                <h3 class="h3 game-title">PUBG</h3>
+                <p class="game-genre" data-i18n="pubgGenre">Battle royale realista</p>
+                <p class="game-text" data-i18n="pubgText">Saltar del avión, elegir bien dónde caer y sobrevivir hasta el final. Partidas por equipos con tabla de puntos.</p>
+                <p class="game-night" data-i18n="pubgNight">Torneo: sábados</p>
+                <button type="button" class="game-signup" data-signup-open data-game="PUBG" data-i18n="signupGame">Inscribirme</button>
+              </div>
+            </li>
+
+          </ul>
+
+          <div class="games-soon" data-reveal="bottom">
+            <ion-icon name="rocket-outline" aria-hidden="true"></ion-icon>
+            <p>
+              <strong data-i18n="soonTitle">Pronto agregaremos más juegos.</strong>
+              <span data-i18n="soonText">¿Cuál quieres ver en el próximo torneo? Cuéntanos en Discord.</span>
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TORNEOS
+      -->
+
+      <section class="section upcoming" aria-labelledby="upcoming-label" id="tournament">
+        <div class="container">
+
+          <p class="section-subtitle" id="upcoming-label" data-reveal="bottom" data-i18n="upSubtitle">
+            Próximos partidos
+          </p>
+
+          <h2 class="h2 section-title" data-reveal="bottom" data-i18n="upTitle">
+            Copa <br> <span class="span">Galáctica</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom" data-i18n="upText">
+            Estos son los próximos partidos de la copa. Ven a verlos en vivo o síguelos por YouTube y Twitch.
+          </p>
+
+          <ol class="upcoming-list">
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-1.png" width="86" height="81" loading="lazy"
+                  alt="Game Over" class="card-banner">
+
+                <h3 class="h3 card-title">Game Over</h3>
+
+                <div class="card-meta" data-i18n="match1Meta">Valorant | Grupo A</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="19:00">19:00</time>
+
+                <time class="date" datetime="2026-11-14" data-i18n="match1Date">14 nov 2026</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link" aria-label="YouTube">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link" aria-label="Twitch">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-2.png" width="86" height="81" loading="lazy"
+                  alt="Reaper" class="card-banner">
+
+                <h3 class="h3 card-title">Reaper</h3>
+
+                <div class="card-meta" data-i18n="match1Meta">Valorant | Grupo A</div>
+
+              </div>
+
+            </li>
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-3.png" width="86" height="81" loading="lazy"
+                  alt="Martial Master" class="card-banner">
+
+                <h3 class="h3 card-title">Martial Master</h3>
+
+                <div class="card-meta" data-i18n="match2Meta">Fortnite | Squads</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="20:30">20:30</time>
+
+                <time class="date" datetime="2026-11-21" data-i18n="match2Date">21 nov 2026</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link" aria-label="YouTube">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link" aria-label="Twitch">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-4.png" width="86" height="81" loading="lazy"
+                  alt="Phoenix Team" class="card-banner">
+
+                <h3 class="h3 card-title">Phoenix Team</h3>
+
+                <div class="card-meta" data-i18n="match2Meta">Fortnite | Squads</div>
+
+              </div>
+
+            </li>
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-5.png" width="86" height="81" loading="lazy"
+                  alt="Grim Sniper" class="card-banner">
+
+                <h3 class="h3 card-title">Grim Sniper</h3>
+
+                <div class="card-meta" data-i18n="match3Meta">PUBG | Erangel</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="18:00">18:00</time>
+
+                <time class="date" datetime="2026-12-05" data-i18n="match3Date">5 dic 2026</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link" aria-label="YouTube">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link" aria-label="Twitch">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-6.png" width="86" height="81" loading="lazy"
+                  alt="The Killers" class="card-banner">
+
+                <h3 class="h3 card-title">The Killers</h3>
+
+                <div class="card-meta" data-i18n="match3Meta">PUBG | Erangel</div>
+
+              </div>
+
+            </li>
+
+          </ol>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NOTICIAS
+      -->
+
+      <section class="section news" aria-labelledby="news-label" id="news">
+        <div class="container">
+
+          <p class="section-subtitle" id="news-label" data-reveal="bottom" data-i18n="newsSubtitle">Lo último</p>
+
+          <h2 class="h2 section-title" data-reveal="bottom" data-i18n="newsTitle">
+            Noticias y <span class="span">eventos</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom" data-i18n="newsText">
+            Inscripciones, resultados y eventos especiales en Galactic Squad.
+          </p>
+
+          <ul class="news-list">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news-pubg.jpg" width="600" height="400" loading="lazy"
+                    alt="" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">PUBG</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2026-10-12" data-i18n="news1Date">12 oct 2026</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text" data-i18n="author1">Galactic Squad</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" data-i18n="news1Title">Abiertas las inscripciones para la liga de PUBG</a>
+                  </h3>
+
+                  <p class="card-text" data-i18n="news1Text">
+                    Equipos de cuatro, partidas los sábados y tabla de puntos por kills y posición. Así puedes inscribir a tu equipo...
+                  </p>
+
+                  <button type="button" class="link has-before" data-article-open="1" data-i18n="readMore">Leer más</button>
+
+                  <div class="article-full" id="article-1" hidden>
+                    <p data-i18n="art1p1">La liga de PUBG de Galactic Squad empieza en noviembre y ya puedes inscribir a tu equipo. Jugamos los sábados en modo por equipos de cuatro, con varias partidas cada noche.</p>
+                    <h4 data-i18n="art1h1">Cómo se cuentan los puntos</h4>
+                    <p data-i18n="art1p2">Cada partida suma puntos por la posición final del equipo y por cada eliminación. Al final de la temporada, los equipos con más puntos pasan a la gran final de la Copa Galáctica.</p>
+                    <h4 data-i18n="art1h2">Qué necesitas</h4>
+                    <p data-i18n="art1p3">Un equipo de cuatro personas (si te falta gente, te ayudamos a completarlo) y estar listo 20 minutos antes de la primera partida para el registro. Inscríbete con el botón de abajo y te enviaremos el calendario completo.</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news-fortnite.jpg" width="600" height="400" loading="lazy"
+                    alt="" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">Fortnite</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2026-10-03" data-i18n="news2Date">3 oct 2026</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text" data-i18n="author2">Galactic Squad</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" data-i18n="news2Title">Torneo de Fortnite: todo lo que necesitas saber</a>
+                  </h3>
+
+                  <p class="card-text" data-i18n="news2Text">
+                    Formatos de solitario, dúos y squads, horarios y premios. Revisa las reglas antes del primer martes...
+                  </p>
+
+                  <button type="button" class="link has-before" data-article-open="2" data-i18n="readMore">Leer más</button>
+
+                  <div class="article-full" id="article-2" hidden>
+                    <p data-i18n="art2p1">Los martes son de Fortnite. Cada semana cambiamos el formato entre solitario, dúos y squads, para que todos tengan su oportunidad de ganar.</p>
+                    <h4 data-i18n="art2h1">Reglas básicas</h4>
+                    <p data-i18n="art2p2">Se juegan tres partidas por noche y gana quien sume más puntos entre las tres. En solitario no se permite hacer equipo con otros jugadores, y cualquier trampa significa descalificación.</p>
+                    <h4 data-i18n="art2h2">Premios</h4>
+                    <p data-i18n="art2p3">El ganador de cada noche entra al ranking del mes, y el primero del ranking clasifica directo a la final de la Copa Galáctica. Revisa las reglas completas antes del primer martes.</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news-games.jpg" width="600" height="400" loading="lazy"
+                    alt="" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag" data-i18n="tagEvent">Evento</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2026-09-27" data-i18n="news3Date">27 sep 2026</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text" data-i18n="author3">Galactic Squad</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" data-i18n="news3Title">Noche libre: trae tu juego favorito</a>
+                  </h3>
+
+                  <p class="card-text" data-i18n="news3Text">
+                    Una noche al mes abrimos las consolas para cualquier juego. Sin torneo, solo para jugar con amigos...
+                  </p>
+
+                  <button type="button" class="link has-before" data-article-open="3" data-i18n="readMore">Leer más</button>
+
+                  <div class="article-full" id="article-3" hidden>
+                    <p data-i18n="art3p1">Una vez al mes dejamos los torneos a un lado y abrimos las salas para jugar lo que quieras, sin presión y sin tabla de puntos.</p>
+                    <h4 data-i18n="art3h1">Cómo funciona</h4>
+                    <p data-i18n="art3p2">Puedes traer tu juego favorito, retar a tus amigos o probar algo nuevo. Es la mejor forma de conocer a otros jugadores y armar equipo para los próximos torneos.</p>
+                    <h4 data-i18n="art3h2">Cupos limitados</h4>
+                    <p data-i18n="art3p3">La entrada es gratis, pero hay que inscribirse antes porque los cupos son limitados. Revisa esta sección para ver la fecha de la próxima noche libre.</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="contacto">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo dgs-logo dgs-logo-lg" aria-label="Galactic Squad, inicio" data-i18n-aria="logoAria">
+            <svg class="dgs-mark" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M14 34 a18 18 0 1 0 36 0 a18 18 0 1 0 -36 0 Z" fill="url(#dgsDrop)" />
+              <ellipse cx="32" cy="34" rx="29" ry="8" fill="none" stroke="#7cf7ff" stroke-width="3"
+                transform="rotate(-18 32 34)" />
+              <circle cx="25" cy="27" r="4" fill="#fff" opacity="0.85" />
+              <circle cx="52" cy="10" r="2" fill="#fff" />
+              <circle cx="10" cy="12" r="1.4" fill="#fff" opacity="0.7" />
+            </svg>
+            <span class="dgs-word">
+              <span class="dgs-main">GALACTIC</span>
+              <span class="dgs-sub">Squad</span>
+            </span>
+          </a>
+
+          <p class="footer-text" data-i18n="footerText">
+            Galactic Squad es un lugar de torneos y videojuegos. Ven a jugar Valorant, Fortnite, Guitar Hero y PUBG con más jugadores como tú.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link" aria-label="Discord">
+                <ion-icon name="logo-discord"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link" aria-label="Twitch">
+                <ion-icon name="logo-twitch"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after" data-i18n="linksTitle">Enlaces útiles</p>
+
+          <ul>
+
+            <li>
+              <a href="#juegos" class="footer-link" data-i18n="linkGames">Juegos</a>
+            </li>
+
+            <li>
+              <a href="#tournament" class="footer-link" data-i18n="linkTournaments">Torneos</a>
+            </li>
+
+            <li>
+              <a href="#news" class="footer-link" data-i18n="linkNews">Noticias</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link" data-i18n="linkPrivacy">Política de privacidad</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link" data-i18n="linkTerms">Términos de uso</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after" data-i18n="contactTitle">Contacto</p>
+
+          <div class="contact-item">
+            <span class="span" data-i18n="contactJoin">Inscripciones:</span>
+
+            <a href="mailto:info@galacticsquad.com" class="contact-link">info@galacticsquad.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Discord:</span>
+
+            <a href="#" class="contact-link">discord.gg/galacticsquad</a>
+          </div>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after" data-i18n="newsletterTitle">Recibe los próximos torneos</p>
+
+          <form class="footer-form" data-newsletter-form novalidate>
+            <input type="email" name="email_address" required placeholder="Tu correo" autocomplete="off"
+              aria-label="Tu correo" data-i18n-placeholder="emailPlaceholder" data-i18n-aria="emailPlaceholder"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn data-i18n="subscribe">Suscribirme</button>
+
+            <p class="form-msg" data-newsletter-msg role="status" aria-live="polite"></p>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright" data-i18n="copyright">
+          &copy; 2026 Galactic Squad. Todos los derechos reservados.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #INSCRIPCIÓN (simulada)
+  -->
+
+  <dialog class="modal" data-signup-modal aria-labelledby="signup-title">
+    <button type="button" class="modal-close" data-modal-close aria-label="Cerrar" data-i18n-aria="close">
+      <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+    </button>
+
+    <div class="signup-view" data-signup-form-view>
+      <p class="section-subtitle" data-i18n="signupEyebrow">Copa Galáctica</p>
+      <h2 class="modal-title" id="signup-title" data-i18n="signupTitle">Inscríbete al torneo</h2>
+      <p class="modal-text" data-i18n="signupText">Llena tus datos y te enviaremos el calendario y las reglas a tu correo.</p>
+
+      <form class="signup-form" data-signup-form novalidate>
+
+        <label class="field">
+          <span class="field-label" data-i18n="fName">Nombre o gamertag</span>
+          <input type="text" name="name" class="field-input" required autocomplete="nickname" maxlength="40">
+          <span class="field-error" data-i18n="errName">Escribe tu nombre o gamertag.</span>
+        </label>
+
+        <label class="field">
+          <span class="field-label" data-i18n="fEmail">Correo</span>
+          <input type="email" name="email" class="field-input" required autocomplete="email">
+          <span class="field-error" data-i18n="errEmail">Escribe un correo válido, por ejemplo nombre@correo.com.</span>
+        </label>
+
+        <label class="field">
+          <span class="field-label" data-i18n="fGame">Juego</span>
+          <select name="game" class="field-input" required>
+            <option value="" data-i18n="fGamePick">Elige un juego</option>
+            <option value="Valorant">Valorant</option>
+            <option value="Fortnite">Fortnite</option>
+            <option value="Guitar Hero">Guitar Hero</option>
+            <option value="PUBG">PUBG</option>
+          </select>
+          <span class="field-error" data-i18n="errGame">Elige el juego en el que quieres competir.</span>
+        </label>
+
+        <label class="field">
+          <span class="field-label"><span data-i18n="fTeam">Nombre del equipo</span> <em data-i18n="optional">(opcional)</em></span>
+          <input type="text" name="team" class="field-input" maxlength="40" autocomplete="off">
+        </label>
+
+        <button type="submit" class="btn modal-submit" data-btn data-signup-submit>
+          <span data-i18n="signupSubmit">Confirmar inscripción</span>
+        </button>
+
+      </form>
+    </div>
+
+    <div class="signup-view signup-success" data-signup-success hidden>
+      <div class="success-icon"><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon></div>
+      <h2 class="modal-title" data-i18n="successTitle">¡Inscripción confirmada!</h2>
+      <p class="modal-text" data-signup-success-text></p>
+      <p class="success-code"><span data-i18n="successCode">Código de inscripción:</span> <strong data-signup-code></strong></p>
+      <button type="button" class="btn" data-btn data-modal-close data-i18n="successClose">Listo</button>
+    </div>
+  </dialog>
+
+
+
+
+
+  <!-- 
+    - #ARTÍCULO
+  -->
+
+  <dialog class="modal modal-article" data-article-modal aria-labelledby="article-title">
+    <button type="button" class="modal-close" data-modal-close aria-label="Cerrar" data-i18n-aria="close">
+      <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+    </button>
+
+    <figure class="article-banner"><img src="" alt="" class="img-cover" data-article-img></figure>
+
+    <div class="article-content">
+      <p class="article-meta" data-article-meta></p>
+      <h2 class="modal-title" id="article-title" data-article-title></h2>
+      <div class="article-body" data-article-body></div>
+      <button type="button" class="btn" data-btn data-signup-open data-i18n="articleCta">Inscribirme ahora</button>
+    </div>
+  </dialog>
+
+
+
+
+
+  <!-- 
+    - #VOLVER ARRIBA
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="volver arriba" data-i18n-aria="backTop" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CURSOR PERSONALIZADO
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - js
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicons
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
